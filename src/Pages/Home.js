@@ -22,7 +22,7 @@ const Home = () => {
 
     setTimeout(() => {
         setIsLoadding(false);
-    }, 3000);
+    }, 2000);
 
     // pegar quando o usuario usar o scroll
     useEffect(() => {
