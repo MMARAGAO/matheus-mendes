@@ -10,20 +10,16 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
     const vantaConfig = {
         el: vantaRef.current,
         p5: p5,
-        mouseControls: false,
-        touchControls: false,
+        mouseControls: true,
+        touchControls: true,
         gyroControls: false,
-        minHeight: 50.0,
-        minWidth: 50.0,
-        scale: 0.01,
-        scaleMobile: 0.01,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
         color: 0x2b4d8c,
         backgroundColor: 0x000000,
-        points: 1.0,
-        maxDistance: 5.0,
-        spacing: 50.0,
-        showDots: false,
-        showLines: false
+
     };
 
     const cleanup = useCallback(() => {
