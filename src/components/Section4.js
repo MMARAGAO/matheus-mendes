@@ -49,9 +49,8 @@ const Section4 = () => {
             </div>
             <div className="flex flex-wrap w-full justify-between">
                 {cards.map((card) => (
-                    <div className="w-1/2 lg:w-1/3 p-2">
+                    <div key={card.id} className="w-1/2 lg:w-1/3 p-2">
                         <div
-                            key={card.id}
                             onMouseEnter={() => handleMouseEnter(card.id)}
                             onMouseLeave={() => handleMouseLeave(card.id)}
                             className="relative cursor-pointer h-40 p-6"
