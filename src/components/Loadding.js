@@ -1,38 +1,36 @@
-import React, { useEffect, useRef } from "react";
-import TOPOLOGY from "vanta/dist/vanta.topology.min";
-import p5 from 'p5';
+import React, { useState, useEffect, useRef } from 'react'
+import NET from 'vanta/dist/vanta.net.min'
+import * as THREE from 'three'
 
 const Loadding = ({ isLoadding }) => {
-    const vantaref = useRef(null);
-
+    const [vantaEffect, setVantaEffect] = useState(0)
+    const myRef = useRef(null)
     useEffect(() => {
-        let vantaEffect;
-        if (isLoadding && !vantaEffect && vantaref.current) {
-            vantaEffect = TOPOLOGY({
-                el: vantaref.current,
-                p5: p5,
-                mouseControls: false,
-                touchControls: false,
+        if (!vantaEffect) {
+            setVantaEffect(NET({
+                el: myRef.current,
+                THREE: THREE,
+                mouseControls: true,
+                touchControls: true,
                 gyroControls: false,
                 minHeight: 200.00,
                 minWidth: 200.00,
-                scale: 0.01,
-                scaleMobile: 0.01,
-                color: 0x2b4d8c,
-                backgroundColor: 0x000000,
-            });
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x3fafff,
+                backgroundColor: 0x0,
+                maxDistance: 17.00,
+                spacing: 20.00
+            }))
         }
-
         return () => {
-            if (vantaEffect) {
-                vantaEffect.destroy();
-            }
-        };
-    }, [isLoadding]);
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
 
 
     return (
-        <div ref={vantaref}
+        <div ref={myRef}
             className={`text-white z-20 fixed bg-black transition-all duration-500 overflow-hidden  ${isLoadding ? 'h-screen w-full top-0' : 'h-0 w-full top-0'}`}>
             <div className="h-full flex justify-center items-center animate-bounce animate-ping">
                 <div className="bg-gray-700 h-10 w-10 rounded-full"></div>

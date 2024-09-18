@@ -11,8 +11,16 @@ module.exports = {
         slideIn: 'slideIn 0.3s ease-in-out',
         fadeInUp: 'fadeInUp 1s ease-out forwards',
         fadeOut: 'fadeOut 1s ease-out forwards',
+        'space-in': 'spaceIn 0.5s forwards',
+        'space-out': 'spaceOut 0.5s forwards',
+        'up-down': 'upDown 2s infinite ease-in-out',
       },
       keyframes: {
+        upDown: {
+          '0%': { transform: 'translateY(-5px)' },
+          '50%': { transform: 'translateY(5px)' },
+          '100%': { transform: 'translateY(-5px)' },
+        },
         slideIn: {
           '0%': { transform: 'translatey(100%)' },
           '100%': { transform: 'translatey(0)' },

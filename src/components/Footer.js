@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faMapMarkerAlt, faClock, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
@@ -45,15 +45,15 @@ const Footer = () => {
                 <div>
                     <h4 className="text-xl font-semibold mb-4">Contato</h4>
                     <div className="flex flex-col space-y-2">
-                        <p className="text-gray-600"><FontAwesomeIcon icon={faEnvelope} className="mr-2 text-gray-600" />meuemail@exemplo.com</p>
-                        <p className="text-gray-600"><FontAwesomeIcon icon={faPhone} className="mr-2 text-gray-600" />(11) 1234-5678</p>
-                        <p className="text-gray-600"><FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-gray-600" />São Paulo, Brasil</p>
+                        <p className="text-gray-600"><FontAwesomeIcon icon={faEnvelope} className="mr-2 text-gray-600" />matheusmoxil@gmail.com</p>
+                        <p className="text-gray-600"><FontAwesomeIcon icon={faPhone} className="mr-2 text-gray-600" />(61) 9 8292-8478</p>
+                        <p className="text-gray-600"><FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-gray-600" />Brasilia - DF, Brasil</p>
                     </div>
                 </div>
                 <div>
                     <h4 className="text-xl font-semibold mb-4">Disponibilidade</h4>
                     <div className="flex flex-col space-y-2">
-                        <p className="text-gray-600"><FontAwesomeIcon icon={faClock} className="mr-2 text-gray-600" />Seg - Sex: 9h - 18h</p>
+                        <p className="text-gray-600"><FontAwesomeIcon icon={faClock} className="mr-2 text-gray-600" />Seg - Sex: 5h - 18h</p>
                         <p className="text-gray-600"><FontAwesomeIcon icon={faClock} className="mr-2 text-gray-600" />Sáb: 10h - 14h</p>
                         <p className="text-gray-600"><FontAwesomeIcon icon={faClock} className="mr-2 text-gray-600" />Dom: Fechado</p>
                     </div>
@@ -61,19 +61,13 @@ const Footer = () => {
                 <div>
                     <h4 className="text-xl font-semibold mb-4">Redes Sociais</h4>
                     <div className="flex space-x-4">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+                        <a href="https://github.com/MMARAGAO" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
                             <FontAwesomeIcon icon={faGithub} size="2x" />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
+                        <a href="https://www.linkedin.com/in/matheus-mendes-816572207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-400">
-                            <FontAwesomeIcon icon={faTwitter} size="2x" />
-                        </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
-                            <FontAwesomeIcon icon={faFacebook} size="2x" />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500">
+                        <a href="https://www.instagram.com/mm_aragao?igsh=eXY2c3RzczkzMGNi" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500">
                             <FontAwesomeIcon icon={faInstagram} size="2x" />
                         </a>
                     </div>
@@ -81,7 +75,7 @@ const Footer = () => {
             </div>
             <div className="container mx-auto mt-10 border-t border-gray-300 pt-5 px-2">
                 <div className="flex flex-wrap justify-between items-center">
-                    <p className="text-gray-600">&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+                    <p className="text-gray-600">&copy; 2024 Matheus Mendes. Todos os direitos reservados.</p>
                     <div>
                         <a href="/privacy" className="text-gray-600 hover:text-gray-900">Política de Privacidade</a>
                         <span className="mx-3 text-gray-600">|</span>

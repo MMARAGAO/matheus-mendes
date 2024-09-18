@@ -47,13 +47,13 @@ const Section4 = () => {
                 <h1 className=" text-gray-500">O que há de novo?</h1>
                 <h1 className="font-bold text-4xl">Redes Sociais </h1>
             </div>
-            <div className="flex flex-wrap w-full justify-between">
+            <div className="flex flex-wrap w-full justify-between lg:px-48">
                 {cards.map((card) => (
-                    <div key={card.id} className="w-1/2 lg:w-1/3 p-2">
+                    <div key={card.id} className="w-1/2 lg:w-1/3 p-4">
                         <div
                             onMouseEnter={() => handleMouseEnter(card.id)}
                             onMouseLeave={() => handleMouseLeave(card.id)}
-                            className="relative cursor-pointer h-40 p-6"
+                            className="relative cursor-pointer lg:h-48 2xl:h-80 p-6"
                             style={{
                                 ...imageStyle,
                                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${card.imageUrl})`

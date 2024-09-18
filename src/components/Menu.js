@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import TOPOLOGY from "vanta/dist/vanta.topology.min";
 import p5 from 'p5';
+// navegação
+import { Link } from 'react-router-dom';
 
 
 const Menu = ({ isMouseClick, setIsMouseClick }) => {
@@ -57,14 +59,12 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
     const [hoverButton, setHoverButton] = useState('')
 
 
-
-
     return (
         <div
             ref={vantaRef}
             className={`bg-black fixed transition-all duration-500 overflow-hidden
             ${isMouseClick ? 'h-screen w-full bottom-0' : 'h-0 w-full top-0'}`}>
-            <div className="w-full h-full flex justify-center items-center flex-col -ml-8">
+            <div className="w-full h-full flex justify-center items-center flex-col -ml-8 space-y-2">
                 <div
 
                     className="flex justify-center items-center space-x-4">
@@ -92,7 +92,10 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                         <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'About' ? 'w-14 ml-4' : 'w-0'}`}></div>
 
                     </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'About' ? 'text-white' : 'text-gray-400'}`}>About me</button>
+                    <Link
+                        to='/about'
+
+                        className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'About' ? 'text-white' : 'text-gray-400'}`}>About me</Link>
                 </div>
                 <div
                     onMouseOver={() => setHoverButton('Contact')}

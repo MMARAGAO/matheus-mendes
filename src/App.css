@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 
+@keyframes spaceIn {
+    0% { margin-top: 1; }
+    100% { margin-top: 0.5rem; }
+}
+
+@keyframes spaceOut {
+    0% { margin-top: 0.5rem; }
+    100% { margin-top: 1; }
+}
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
