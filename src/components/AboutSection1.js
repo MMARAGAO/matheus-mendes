@@ -6,6 +6,9 @@ import Global from '../assets/clientes/Global.png';
 import Luxo from '../assets/clientes/Luxo.png';
 import LC from '../assets/clientes/LC.png';
 
+import Image1 from '../assets/carrocel/Image1.jpg';
+import Image2 from '../assets/carrocel/Image2.jpeg';
+
 // icone do font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // icone de seta para direita e para esquerda chevron-right e chevron-left
@@ -42,11 +45,12 @@ const AboutSection1 = () => {
                         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/60 text-white px-4 py-2 rounded-full w-10 h-10 flex justify-center items-center">
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 1 ? 'w-full' : 'w-0'} bg-gray-200 transition-all duration-300`}></div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 2 ? 'w-full' : 'w-0'} bg-red-200 transition-all duration-300`}></div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 3 ? 'w-full' : 'w-0'} bg-green-200 transition-all duration-300`}></div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 4 ? 'w-full' : 'w-0'} bg-purple-200 transition-all duration-300`}></div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 5 ? 'w-full' : 'w-0'} bg-yellow-200 transition-all duration-300`}></div>
+                    <div className={`h-72 md:h-80 lg:h-96 ${active === 1 ? 'w-full' : 'w-0'} bg-gray-200 transition-all duration-300`}>
+                        <img src={Image1} alt="Image1" className="w-full h-full object-cover" />
+                    </div>
+                    <div className={`h-72 md:h-80 lg:h-96 ${active === 2 ? 'w-full' : 'w-0'} bg-red-200 transition-all duration-300`}>
+                        <img src={Image2} alt="Image2" className="w-full h-full object-cover" />
+                    </div>
                     <button
                         onClick={() => incrementActive()}
                         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/60 text-white px-4 py-2 rounded-full w-10 h-10 flex justify-center items-center">
