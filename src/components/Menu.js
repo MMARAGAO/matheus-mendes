@@ -98,7 +98,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
 
                         className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'About' ? 'text-white' : 'text-gray-400'}`}>About me</Link>
                 </div>
-                <div
+                <Link
+                    to='/contact'
                     onMouseOver={() => setHoverButton('Contact')}
                     onMouseOut={() => setHoverButton('')}
                     className="flex justify-center items-center space-x-4">
@@ -107,7 +108,7 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
 
                     </div>
                     <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Contact' ? 'text-white' : 'text-gray-400'}`}>Contact</button>
-                </div>
+                </Link>
 
                 <div
                     onMouseOver={() => setHoverButton('Instagram')}
