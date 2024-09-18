@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import CNI from '../assets/clientes/CNI.png';
 import Compacto from '../assets/clientes/Compacto.png';
@@ -17,14 +17,25 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
 
 const AboutSection1 = () => {
     const [active, setActive] = useState(1);
+    const [isHovered, setIsHovered] = useState(false);
 
     const incrementActive = () => {
-        setActive(prevActive => (prevActive < 3 ? prevActive + 1 : prevActive));
+        setActive(prevActive => (prevActive < 3 ? prevActive + 1 : 1));
     };
 
     const decrementActive = () => {
         setActive(prevActive => (prevActive > 1 ? prevActive - 1 : prevActive));
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!isHovered) {
+                incrementActive();
+            }
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [isHovered]);
 
     return (
         <section className="px-4 md:px-8 lg:px-40 2xl:px-96 py-8 space-y-16">
@@ -40,7 +51,11 @@ const AboutSection1 = () => {
                 </div>
             </div>
             <div className="space-y-4">
-                <div className="relative flex justify-center items-center">
+                <div
+                    id="carrocel"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    className="relative flex justify-center items-center">
                     <button
                         onClick={() => decrementActive()}
                         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/60 text-white px-4 py-2 rounded-full w-10 h-10 flex justify-center items-center">

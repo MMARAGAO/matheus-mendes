@@ -3,11 +3,10 @@ import { useInView } from 'react-intersection-observer';
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Loadding from "../components/Loadding";
-import AboutSection1 from "../components/AboutSection1";
-
+import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 
-const About = () => {
+const Contact = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isMouseClick, setIsMouseClick] = useState(false);
     const [isLoadding, setIsLoadding] = useState(true);
@@ -47,7 +46,7 @@ const About = () => {
             <Header isHovered={isHovered} setIsHovered={setIsHovered} isMouseClick={isMouseClick} setIsMouseClick={setIsMouseClick} isLoadding={isLoadding} isScroll={isScroll} />
             <Menu isHovered={isHovered} setIsHovered={setIsHovered} isMouseClick={isMouseClick} setIsMouseClick={setIsMouseClick} />
             <div className={`${isMouseClick || isLoadding || !showContent ? 'hidden' : 'transition-opacity duration-500 opacity-100'}`}>
-                <AboutSection1 />
+                <ContactSection />
             </div>
 
             <div className={`${isMouseClick ? 'hidden' : ''} ${isLoadding ? 'hidden' : ''}`}>
@@ -57,4 +56,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Contact;

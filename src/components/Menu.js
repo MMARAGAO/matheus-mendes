@@ -74,7 +74,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     <button className="text-gray-400 text-sm"
                     >Menu</button>
                 </div>
-                <div
+                <Link
+                    to='/'
                     onMouseOver={() => setHoverButton('projects')}
                     onMouseOut={() => setHoverButton('')}
                     className="flex justify-center items-center space-x-4">
@@ -83,7 +84,7 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     </div>
                     <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'projects' ? 'text-white' : 'text-gray-400'}`}
                     >Projects</button>
-                </div>
+                </Link>
                 <div
                     onMouseOver={() => setHoverButton('About')}
                     onMouseOut={() => setHoverButton('')}
@@ -107,35 +108,16 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     </div>
                     <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Contact' ? 'text-white' : 'text-gray-400'}`}>Contact</button>
                 </div>
-                <div
-                    onMouseOver={() => setHoverButton('Dribbble')}
-                    onMouseOut={() => setHoverButton('')}
-                    className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Dribbble' ? 'w-14 ml-4' : 'w-0'}`}></div>
 
-                    </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Dribbble' ? 'text-white' : 'text-gray-400'}`}>Dribbble</button>
-                </div>
                 <div
                     onMouseOver={() => setHoverButton('Instagram')}
                     onMouseOut={() => setHoverButton('')}
+                    onClick={() => window.location.href = 'https://www.instagram.com/mm_aragao?igsh=eXY2c3RzczkzMGNi'}
                     className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Instagram' ? 'w-14 ml-4' : 'w-0'}`}></div>
-
+                    <div className="flex justify-between w-14 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Instagram' ? 'w-14 ml-4' : 'w-0'}`}></div>
                     </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Instagram' ? 'text-white' : 'text-gray-400'}`}>Instagram</button>
-                </div>
-                <div
-                    onMouseOver={() => setHoverButton('Behance')}
-                    onMouseOut={() => setHoverButton('')}
-                    className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Behance' ? 'w-14 ml-4' : 'w-0'}`}></div>
-
-                    </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Behance' ? 'text-white' : 'text-gray-400'}`}>Behance</button>
+                    <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'Instagram' ? 'text-white' : 'text-gray-400'}`}>Instagram</button>
                 </div>
             </div>
         </div>
