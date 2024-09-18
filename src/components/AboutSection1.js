@@ -19,7 +19,7 @@ const AboutSection1 = () => {
     const [active, setActive] = useState(1);
 
     const incrementActive = () => {
-        setActive(prevActive => (prevActive < 5 ? prevActive + 1 : prevActive));
+        setActive(prevActive => (prevActive < 3 ? prevActive + 1 : prevActive));
     };
 
     const decrementActive = () => {
@@ -30,11 +30,11 @@ const AboutSection1 = () => {
         <section className="px-4 md:px-8 lg:px-40 2xl:px-96 py-8 space-y-16">
             <div className="flex flex-col items-center">
                 <div className="w-full space-y-4 text-center">
-                    <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-600">Algumas palavras sobre mim</h1>
-                    <h1 className="text-xl md:text-2xl lg:text-3xl font-bold px-2">
+                    <h1 className="text-sm md:text-xl lg:text-2xl font-semibold text-gray-600">Algumas palavras sobre mim</h1>
+                    <h1 className="text-md md:text-2xl lg:text-3xl font-bold px-2">
                         Eu sou Matheus Mendes, um desenvolvedor full stack e designer multidisciplinar que se concentra em traduzir as ideias dos meus clientes em soluções visuais envolventes e funcionais. Eu me especializo em sites responsivos e interfaces de usuário funcionais.
                     </h1>
-                    <h1 className="text-base md:text-lg lg:text-xl text-gray-600 font-semibold">
+                    <h1 className="text-sm md:text-lg lg:text-xl text-gray-600 font-semibold">
                         Nos últimos 5 anos, tenho trabalhado com empresas como Global Advising, CNI, Compacto Tecnologia e também prestando serviços a terceiros. Adoro colaborar em equipe e contribuir com meu conhecimento técnico e criativo. No meu tempo livre, gosto de praticar atividades físicas, o que me ajuda a manter o equilíbrio e a criatividade no dia a dia.
                     </h1>
                 </div>
@@ -46,13 +46,13 @@ const AboutSection1 = () => {
                         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/60 text-white px-4 py-2 rounded-full w-10 h-10 flex justify-center items-center">
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 1 ? 'w-full' : 'w-0'} bg-gray-200 transition-all duration-300`}>
+                    <div className={`h-40 md:h-80 lg:h-96 ${active === 1 ? 'w-full' : 'w-0'} bg-gray-200 transition-all duration-300`}>
                         <img src={Image1} alt="Image1" className="w-full h-full object-cover" />
                     </div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 2 ? 'w-full' : 'w-0'} bg-red-200 transition-all duration-300`}>
+                    <div className={`h-40 md:h-80 lg:h-96 ${active === 2 ? 'w-full' : 'w-0'} bg-red-200 transition-all duration-300`}>
                         <img src={Image2} alt="Image2" className="w-full h-full object-cover" />
                     </div>
-                    <div className={`h-72 md:h-80 lg:h-96 ${active === 3 ? 'w-full' : 'w-0'} bg-blue-200 transition-all duration-300`}>
+                    <div className={`h-40 md:h-80 lg:h-96 ${active === 3 ? 'w-full' : 'w-0'} bg-blue-200 transition-all duration-300`}>
                         <img src={Image3} alt="Image3" className="w-full h-full object-cover" />
                     </div>
                     <button
@@ -77,13 +77,13 @@ const AboutSection1 = () => {
             <div className="flex flex-col lg:flex-row lg:justify-between gap-4 mt-4">
                 <div className="flex-1">
                     <h1 className="text-gray-400 text-sm text-center ">Serviços oferecidos</h1>
-                    <h1 className="text-center  font-semibold">
+                    <h1 className="text-center  font-semibold text-sm lg:text-base">
                         Desenvolvimento de sites <span className="text-gray-200">/</span> Aplicativos móveis <span className="text-gray-200">/</span> Sistemas personalizados <span className="text-gray-200">/</span> Integração de equipamentos <span className="text-gray-200">/</span> Segurança da informação <span className="text-gray-200">/</span> Gestão de TI <span className="text-gray-200">/</span> Coordenação de equipes <span className="text-gray-200">/</span> Desenvolvimento full stack <span className="text-gray-200">/</span> UX/UI Design <span className="text-gray-200">/</span> Ciência da computação <span className="text-gray-200">/</span> Inteligência artificial <span className="text-gray-200">/</span> Machine Learning <span className="text-gray-200">/</span> Ciência de dados
                     </h1>
                 </div>
                 <div className="flex-1">
                     <h1 className="text-gray-400 text-sm text-center ">Ferramentas e tecnologias</h1>
-                    <h1 className="text-center  font-semibold">
+                    <h1 className="text-center  font-semibold text-sm lg:text-base ">
                         React <span className="text-gray-200">/</span> React Native <span className="text-gray-200">/</span> Expo <span className="text-gray-200">/</span> JavaScript <span className="text-gray-200">/</span> PHP <span className="text-gray-200">/</span> Django <span className="text-gray-200">/</span> C++ <span className="text-gray-200">/</span> Node.js <span className="text-gray-200">/</span> Python <span className="text-gray-200">/</span> SQL <span className="text-gray-200">/</span> APIs <span className="text-gray-200">/</span> Figma <span className="text-gray-200">/</span> UX/UI Design
                     </h1>
                 </div>
