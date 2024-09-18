@@ -65,7 +65,6 @@ const ContactSection = () => {
                             maxZoom: 100
                         }}
                     >
-                        <Marker position={center} />
                         <Marker position={newMarkerPosition} icon={MarkerPng} />
                     </GoogleMap>
                 </LoadScript>
