@@ -101,7 +101,7 @@ const AboutSection1 = () => {
             <section id="experiencia" className="space-y-6">
                 <h2 className="text-lg font-bold text-black">Experiência</h2>
                 <p className="text-black">
-                    Com mais de 9 anos de atuação no setor de tecnologia, acumulei vasta experiência em diferentes áreas, desde o desenvolvimento de soluções completas até a gestão de infraestrutura de TI. Durante minha jornada profissional, colaborei com diversas empresas, sempre buscando inovar e oferecer as melhores soluções para os desafios apresentados. Meu trabalho é focado na criação de experiências eficientes e intuitivas, que impactam diretamente a performance e a satisfação dos clientes. Para mais informações sobre minha trajetória, visite meu perfil no <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-black">LinkedIn</a>.
+                    Com mais de 6 anos de atuação no setor de tecnologia, acumulei vasta experiência em diferentes áreas, desde o desenvolvimento de soluções completas até a gestão de infraestrutura de TI. Durante minha jornada profissional, colaborei com diversas empresas, sempre buscando inovar e oferecer as melhores soluções para os desafios apresentados. Meu trabalho é focado na criação de experiências eficientes e intuitivas, que impactam diretamente a performance e a satisfação dos clientes. Para mais informações sobre minha trajetória, visite meu perfil no <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-black">LinkedIn</a>.
                 </p>
 
                 <div className="lg:pl-10 pl-4 space-y-6">
