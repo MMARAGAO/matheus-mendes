@@ -7,7 +7,8 @@ import Luxo from '../assets/clientes/Luxo.png';
 import LC from '../assets/clientes/LC.png';
 
 import Image1 from '../assets/carrocel/Image1.jpg';
-import Image2 from '../assets/carrocel/Image2.jpeg';
+import Image2 from '../assets/carrocel/Image2.jpg';
+import Image3 from '../assets/carrocel/Image3.jpg';
 
 // icone do font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -51,6 +52,9 @@ const AboutSection1 = () => {
                     <div className={`h-72 md:h-80 lg:h-96 ${active === 2 ? 'w-full' : 'w-0'} bg-red-200 transition-all duration-300`}>
                         <img src={Image2} alt="Image2" className="w-full h-full object-cover" />
                     </div>
+                    <div className={`h-72 md:h-80 lg:h-96 ${active === 3 ? 'w-full' : 'w-0'} bg-blue-200 transition-all duration-300`}>
+                        <img src={Image3} alt="Image3" className="w-full h-full object-cover" />
+                    </div>
                     <button
                         onClick={() => incrementActive()}
                         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/60 text-white px-4 py-2 rounded-full w-10 h-10 flex justify-center items-center">
@@ -58,7 +62,7 @@ const AboutSection1 = () => {
                     </button>
                 </div>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {[1, 2].map(num => (
+                    {[1, 2, 3].map(num => (
                         <button
                             key={num}
                             onClick={() => setActive(num)}
