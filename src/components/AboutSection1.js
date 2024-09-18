@@ -144,7 +144,7 @@ const AboutSection1 = () => {
             <section id="clientes" className="space-y-6 py-10">
                 <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-black">Clientes</h2>
                 <p className="text-sm md:text-base lg:text-lg text-black lg:pl-10 pl-4 lg:indent-20 indent-10">
-                    Ao longo dos últimos 8 anos, tive o privilégio de colaborar com empresas de diferentes setores, desenvolvendo soluções inovadoras e personalizadas. Cada projeto foi uma oportunidade de criar impacto real e duradouro.
+                    Ao longo dos últimos 6 anos, tive o privilégio de colaborar com empresas de diferentes setores, desenvolvendo soluções inovadoras e personalizadas. Cada projeto foi uma oportunidade de criar impacto real e duradouro.
                 </p>
                 <p className="text-sm md:text-base lg:text-lg text-black lg:indent-20 indent-10">
                     Confira algumas das marcas com as quais trabalhei, onde contribuí com minha expertise em tecnologia para transformar seus desafios em soluções:
