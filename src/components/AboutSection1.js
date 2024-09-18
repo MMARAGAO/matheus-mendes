@@ -58,7 +58,7 @@ const AboutSection1 = () => {
                     </button>
                 </div>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {[1, 2, 3, 4, 5].map(num => (
+                    {[1, 2].map(num => (
                         <button
                             key={num}
                             onClick={() => setActive(num)}
