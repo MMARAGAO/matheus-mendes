@@ -91,7 +91,7 @@ const AboutSection1 = () => {
 
             <section id="experiencia" className="space-y-6">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black">Experiência</h2>
-                <p className="text-base md:text-lg lg:text-xl text-black pl-4 md:pl-6 lg:pl-8 indent-20">
+                <p className="text-base md:text-lg lg:text-xl text-black pl-4 md:pl-6 lg:pl-8 lg:indent-20 indent-10">
                     Com mais de 6 anos de atuação no setor de tecnologia, acumulei vasta experiência em diferentes áreas, desde o desenvolvimento de soluções completas até a gestão de infraestrutura de TI. Durante minha jornada profissional, colaborei com diversas empresas, sempre buscando inovar e oferecer as melhores soluções para os desafios apresentados. Meu trabalho é focado na criação de experiências eficientes e intuitivas, que impactam diretamente a performance e a satisfação dos clientes. Para mais informações sobre minha trajetória, visite meu perfil no <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-black">LinkedIn</a>.
                 </p>
 
@@ -100,7 +100,7 @@ const AboutSection1 = () => {
                         <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-black">Global Access (CNI)</h3>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Função:</strong> Supervisor Administrativo / Desenvolvedor Full-Stack Pleno</p>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Período:</strong> 2022 — Presente</p>
-                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16">
+                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16 lg:indent-20 indent-10">
                             Atualmente, atuo na Global Access (CNI), onde sou contratado como Supervisor Administrativo, com foco no desenvolvimento Full-Stack. Minhas responsabilidades incluem a criação e manutenção de sistemas complexos, atuando em diferentes camadas da aplicação e garantindo a integridade e performance dos projetos.
                         </p>
                     </article>
@@ -109,7 +109,7 @@ const AboutSection1 = () => {
                         <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-black">Compacto Tecnologia</h3>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Função:</strong> Infraestrutura</p>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Período:</strong> 2019 — 2022</p>
-                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16">
+                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16 lg:indent-20 indent-10">
                             Na Compacto Tecnologia, trabalhei no setor de infraestrutura, onde fui responsável por gerenciar e otimizar a infraestrutura de TI, além de colaborar no desenvolvimento de soluções que atendem às necessidades dos clientes e garantem a eficiência operacional da empresa.
                         </p>
                     </article>
@@ -118,7 +118,7 @@ const AboutSection1 = () => {
                         <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-black">EMBRAPA</h3>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Função:</strong> Estagiário</p>
                         <p className="text-gray-400 font-semibold pl-4 md:pl-6 lg:pl-8"><strong>Período:</strong> 2017 — 2019</p>
-                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16">
+                        <p className="text-base md:text-lg lg:text-xl text-black pl-8 md:pl-12 lg:pl-16 lg:indent-20 indent-10">
                             Durante meu estágio na EMBRAPA, adquiri experiência prática em diversos projetos de tecnologia, contribuindo para o desenvolvimento e implementação de soluções voltadas para a pesquisa e inovação na área agrícola.
                         </p>
                     </article>
@@ -127,11 +127,11 @@ const AboutSection1 = () => {
 
 
             <section id="clientes" className="space-y-6 py-10">
-                <h2 className="text-lg font-bold text-black">Clientes</h2>
-                <p className="text-black lg:pl-10 pl-4 ">
+                <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-black">Clientes</h2>
+                <p className="text-sm md:text-base lg:text-lg text-black lg:pl-10 pl-4 lg:indent-20 indent-10">
                     Ao longo dos últimos 8 anos, tive o privilégio de colaborar com empresas de diferentes setores, desenvolvendo soluções inovadoras e personalizadas. Cada projeto foi uma oportunidade de criar impacto real e duradouro.
                 </p>
-                <p className="text-black ">
+                <p className="text-sm md:text-base lg:text-lg text-black lg:indent-20 indent-10">
                     Confira algumas das marcas com as quais trabalhei, onde contribuí com minha expertise em tecnologia para transformar seus desafios em soluções:
                 </p>
                 <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
@@ -152,6 +152,7 @@ const AboutSection1 = () => {
                     </div>
                 </div>
             </section>
+
         </section>
     );
 };
