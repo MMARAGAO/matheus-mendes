@@ -5,6 +5,8 @@ import { Input, Select, SelectSection, SelectItem, Button, Textarea } from "@nex
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from 'emailjs-com';
+import InputMask from 'react-input-mask';
+
 
 const ContactSection = () => {
     const mapContainerStyle = {
@@ -100,6 +102,7 @@ const ContactSection = () => {
                             center={center}
                             zoom={14}
                             options={{
+                                gestureHandling: 'greedy',
                                 styles: darkModeStyle,
                                 zoomControl: false,
                                 fullscreenControl: false,
@@ -132,7 +135,13 @@ const ContactSection = () => {
                     <div className="grid grid-cols-2 gap-5">
                         <Input type="email" variant="underlined" label="Seu Email" name="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                         <Input type="text" variant="underlined" label="Seu Nome" name="nome" onChange={(e) => setFormData({ ...formData, nome: e.target.value })} />
-                        <Input type="text" variant="underlined" label="Telefone" name="telefone" onChange={(e) => setFormData({ ...formData, telefone: e.target.value })} />
+                        <InputMask
+                            mask="(99) 9 9999-9999"
+                            value={formData.telefone}
+                            onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
+                        >
+                            {(inputProps) => <Input {...inputProps} type="text" variant="underlined" label="Telefone" name="telefone" />}
+                        </InputMask>
                         <Select variant="underlined" label="Serviço" name="servico">
                             <SelectSection>
                                 <SelectItem onClick={() => setFormData({ ...formData, servico: 'Precisa de ajuda com um projeto único' })}>Precisa de ajuda com um projeto único</SelectItem>
