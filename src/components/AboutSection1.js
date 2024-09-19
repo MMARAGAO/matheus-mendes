@@ -32,7 +32,7 @@ const AboutSection1 = () => {
             if (!isHovered) {
                 incrementActive();
             }
-        }, 3000);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, [isHovered]);
@@ -149,7 +149,7 @@ const AboutSection1 = () => {
                 <p className="text-sm md:text-base lg:text-lg text-black lg:indent-20 indent-10">
                     Confira algumas das marcas com as quais trabalhei, onde contribuí com minha expertise em tecnologia para transformar seus desafios em soluções:
                 </p>
-                <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
+                <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center py-10">
                     <div className="flex justify-center">
                         <img src={CNI} alt="CNI Logo" className="lg:h-20 h-10 object-contain" />
                     </div>

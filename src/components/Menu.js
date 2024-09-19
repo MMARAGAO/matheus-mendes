@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import TOPOLOGY from "vanta/dist/vanta.topology.min";
 import p5 from 'p5';
 // navegação
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Menu = ({ isMouseClick, setIsMouseClick }) => {
     const [vantaEffect, setVantaEffect] = useState(null);
     const vantaRef = useRef(null);
+
+
 
     const vantaConfig = {
         el: vantaRef.current,
@@ -57,6 +59,7 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
 
 
     const [hoverButton, setHoverButton] = useState('')
+    const location = useLocation();
 
 
     return (
@@ -78,38 +81,33 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     to='/'
                     onMouseOver={() => setHoverButton('projects')}
                     onMouseOut={() => setHoverButton('')}
-                    className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'projects' ? 'w-14 ml-4' : 'w-0'}`}></div>
+                    className={`flex justify-center items-center space-x-4 ${location.pathname === '/' ? 'active' : ''}`}>
+                    <div className="flex justify-between w-14 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'projects' || location.pathname === '/' ? 'w-14 ml-4' : 'w-0'}`}></div>
                     </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'projects' ? 'text-white' : 'text-gray-400'}`}
-                    >Projects</button>
+                    <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'projects' || location.pathname === '/' ? 'text-white' : 'text-gray-400'}`}>Projects</button>
                 </Link>
                 <div
                     onMouseOver={() => setHoverButton('About')}
                     onMouseOut={() => setHoverButton('')}
-                    className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'About' ? 'w-14 ml-4' : 'w-0'}`}></div>
-
+                    className={`flex justify-center items-center space-x-4 ${location.pathname === '/about' ? 'active' : ''}`}>
+                    <div className="flex justify-between w-14 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'About' || location.pathname === '/about' ? 'w-14 ml-4' : 'w-0'}`}></div>
                     </div>
                     <Link
                         to='/about'
-
-                        className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'About' ? 'text-white' : 'text-gray-400'}`}>About me</Link>
+                        className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'About' || location.pathname === '/about' ? 'text-white' : 'text-gray-400'}`}>About me</Link>
                 </div>
                 <Link
                     to='/contact'
                     onMouseOver={() => setHoverButton('Contact')}
                     onMouseOut={() => setHoverButton('')}
-                    className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
-                        <div className={` h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Contact' ? 'w-14 ml-4' : 'w-0'}`}></div>
-
+                    className={`flex justify-center items-center space-x-4 ${location.pathname === '/contact' ? 'active' : ''}`}>
+                    <div className="flex justify-between w-14 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Contact' || location.pathname === '/contact' ? 'w-14 ml-4' : 'w-0'}`}></div>
                     </div>
-                    <button className={` text-4xl lg:text-6xl font-bold ${hoverButton === 'Contact' ? 'text-white' : 'text-gray-400'}`}>Contact</button>
+                    <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'Contact' || location.pathname === '/contact' ? 'text-white' : 'text-gray-400'}`}>Contact</button>
                 </Link>
-
                 <div
                     onMouseOver={() => setHoverButton('Instagram')}
                     onMouseOut={() => setHoverButton('')}
