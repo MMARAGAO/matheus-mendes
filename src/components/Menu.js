@@ -71,10 +71,10 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                 <div
 
                     className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1  rounded-full" >
+                    <div className="flex justify-between w-20 h-1  rounded-full" >
                         <div ></div>
                     </div>
-                    <button className="text-gray-400 text-sm"
+                    <button className="text-gray-400 text-base"
                     >Menu</button>
                 </div>
                 <Link
@@ -82,8 +82,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     onMouseOver={() => setHoverButton('projects')}
                     onMouseOut={() => setHoverButton('')}
                     className={`flex justify-center items-center space-x-4 ${location.pathname === '/' ? 'active' : ''}`}>
-                    <div className="flex justify-between w-14 h-1 rounded-full">
-                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'projects' || location.pathname === '/' ? 'w-14 ml-4' : 'w-0'}`}></div>
+                    <div className="flex justify-between w-20 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'projects' || location.pathname === '/' ? 'w-20 ml-4' : 'w-0'}`}></div>
                     </div>
                     <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'projects' || location.pathname === '/' ? 'text-white' : 'text-gray-400'}`}>Projects</button>
                 </Link>
@@ -91,8 +91,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     onMouseOver={() => setHoverButton('About')}
                     onMouseOut={() => setHoverButton('')}
                     className={`flex justify-center items-center space-x-4 ${location.pathname === '/about' ? 'active' : ''}`}>
-                    <div className="flex justify-between w-14 h-1 rounded-full">
-                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'About' || location.pathname === '/about' ? 'w-14 ml-4' : 'w-0'}`}></div>
+                    <div className="flex justify-between w-20 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'About' || location.pathname === '/about' ? 'w-20 ml-4' : 'w-0'}`}></div>
                     </div>
                     <Link
                         to='/about'
@@ -103,8 +103,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     onMouseOver={() => setHoverButton('Contact')}
                     onMouseOut={() => setHoverButton('')}
                     className={`flex justify-center items-center space-x-4 ${location.pathname === '/contact' ? 'active' : ''}`}>
-                    <div className="flex justify-between w-14 h-1 rounded-full">
-                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Contact' || location.pathname === '/contact' ? 'w-14 ml-4' : 'w-0'}`}></div>
+                    <div className="flex justify-between w-20 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Contact' || location.pathname === '/contact' ? 'w-20 ml-4' : 'w-0'}`}></div>
                     </div>
                     <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'Contact' || location.pathname === '/contact' ? 'text-white' : 'text-gray-400'}`}>Contact</button>
                 </Link>
@@ -113,8 +113,8 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
                     onMouseOut={() => setHoverButton('')}
                     onClick={() => window.location.href = 'https://www.instagram.com/mm_aragao?igsh=eXY2c3RzczkzMGNi'}
                     className="flex justify-center items-center space-x-4">
-                    <div className="flex justify-between w-14 h-1 rounded-full">
-                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Instagram' ? 'w-14 ml-4' : 'w-0'}`}></div>
+                    <div className="flex justify-between w-20 h-1 rounded-full">
+                        <div className={`h-full bg-white rounded-full transition-all duration-500 ease-in-out ${hoverButton === 'Instagram' ? 'w-20 ml-4' : 'w-0'}`}></div>
                     </div>
                     <button className={`text-4xl lg:text-6xl font-bold ${hoverButton === 'Instagram' ? 'text-white' : 'text-gray-400'}`}>Instagram</button>
                 </div>
