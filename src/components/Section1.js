@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Link } from 'react-router-dom';
+
+
 const Section1 = () => {
     return (
         <section className="space-y-4 lg:h-screen mt-60 lg:justify-end lg:flex lg:flex-col lg:-mt-32">
@@ -9,13 +12,18 @@ const Section1 = () => {
                 <h1 className="text-gray-600 opacity-0 animate-fadeInUp 2xl:text-xl" style={{ animationDelay: '0.3s' }}>
                     Nos últimos cinco anos, tenho trabalhado como desenvolvedor full-stack, colaborando com grandes empresas e startups em ascensão. Minha atuação tem sido focada em ajudar essas organizações a alcançar seu potencial máximo, desenvolvendo soluções eficientes e atraindo novos clientes.                </h1>
                 <div className="flex space-x-2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-                    <button className="font-bold border-b border-transparent hover:border-gray-900 transition-all duration-500 2xl:text-xl">
+                    <button
+                        className="font-bold border-b border-transparent hover:border-gray-900 transition-all duration-500 2xl:text-xl"
+                        onClick={() => window.scrollBy({ top: 800, behavior: 'smooth' })}
+                    >
                         Ver Projetos
                     </button>
                     <h1 className="text-gray-500 2xl:text-xl">ou</h1>
-                    <button className="font-bold border-b border-transparent hover:border-gray-900 transition-all duration-500 2xl:text-xl">
+                    <Link
+                        to='/about'
+                        className="font-bold border-b border-transparent hover:border-gray-900 transition-all duration-500 2xl:text-xl">
                         Leia Sobre Mim
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="flex justify-center items-center">

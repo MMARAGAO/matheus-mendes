@@ -2,27 +2,32 @@ import React, { useState } from "react";
 // icone do fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from "react-router-dom";
 
 const Section4 = () => {
+
     const cards = [
         {
             id: 1,
-            imageUrl: 'https://picsum.photos/3840/2160?random=7',
-
-
+            imageUrl: require('../assets/instagram.png'),
+            title: 'Instagram',
+            text: 'Me acompanhe no Facebook para ver mais conteúdo sobre programação e design ✌️.',
+            link: 'https://www.instagram.com/mm_aragao?igsh=eXY2c3RzczkzMGNi',
         },
         {
             id: 2,
-            imageUrl: 'https://picsum.photos/3840/2160?random=8',
-
+            imageUrl: require('../assets/linkedin.png'),
+            title: 'LinkedIn',
+            text: 'Vamos nos conectar no LinkedIn e trocar experiências profissionais 🚀.',
+            link: 'https://www.linkedin.com/in/matheus-mendes-816572207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
         {
             id: 3,
-            imageUrl: 'https://picsum.photos/3840/2160?random=9',
-
+            imageUrl: require('../assets/github.png'),
+            title: 'GitHub',
+            text: 'Confira meus repositórios no GitHub e contribua com projetos open source 🤝.',
+            link: 'https://github.com/MMARAGAO',
         },
-
     ];
 
     const imageStyle = {
@@ -49,7 +54,9 @@ const Section4 = () => {
             </div>
             <div className="flex flex-wrap w-full justify-between lg:px-48">
                 {cards.map((card) => (
-                    <div key={card.id} className="w-1/2 lg:w-1/3 p-4">
+                    <button
+                        onClick={() => window.open(card.link, '_blank')}
+                        key={card.id} className="w-1/2 lg:w-1/3 p-4 text-left">
                         <div
                             onMouseEnter={() => handleMouseEnter(card.id)}
                             onMouseLeave={() => handleMouseLeave(card.id)}
@@ -62,9 +69,9 @@ const Section4 = () => {
                             <div className={`absolute left-0 bottom-0 w-full bg-gray-900/80 z-10 transition-all duration-500 ${hoverStates[card.id] ? 'h-full' : 'h-0'}`}></div>
                             <div className="relative z-20 flex space-x-8">
                                 <div className="space-y-2">
-                                    <h1 className={`text-gray-400 ${hoverStates[card.id] ? 'animate-fadeInUp' : ''}`} style={{ animationDelay: '0.1s' }}>{card.year}</h1>
                                     <h1 className={`text-white text-2xl ${hoverStates[card.id] ? 'animate-fadeInUp' : ''}`} style={{ animationDelay: '0.2s' }}>{card.title}</h1>
-                                    <a className={`transition-colors duration-4000 ${hoverStates[card.id] ? 'text-gray-400' : 'text-transparent'}`} style={{ animationDelay: '0.3s' }}>Ver Projeto</a>
+                                    <a className={`transition-colors duration-4000 ${hoverStates[card.id] ? 'text-gray-400' : 'text-transparent'}`} style={{ animationDelay: '0.2s' }}>{card.text}</a>
+
                                 </div>
                                 {card.isNew && (
                                     <div className="">
@@ -73,13 +80,16 @@ const Section4 = () => {
                                 )}
                             </div>
                         </div>
-                    </div>
+                    </button>
                 ))}
             </div>
             <div className="py-10">
                 <h1 className="text-gray-500">Precisa de um programador?</h1>
-                <h1 className="font-bold text-2xl">Vamos trabalhar junto<i><FontAwesomeIcon className="ml-2" icon={faArrowRight} /></i></h1>
-
+                <h1 className="font-bold text-2xl">
+                    <Link to='/contact'>
+                        Vamos trabalhar junto<i><FontAwesomeIcon className="ml-2" icon={faArrowRight} /></i>
+                    </Link>
+                </h1>
             </div>
         </section>
     );
