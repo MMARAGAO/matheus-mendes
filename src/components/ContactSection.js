@@ -5,7 +5,6 @@ import { Input, Select, SelectSection, SelectItem, Button, Textarea } from "@nex
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import emailjs from 'emailjs-com';
-import { text } from "@fortawesome/fontawesome-svg-core";
 
 const ContactSection = () => {
     const mapContainerStyle = {
@@ -50,6 +49,7 @@ const ContactSection = () => {
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
+        telefone: '',
         servico: '',
         orcamento: '',
         text: ''
@@ -69,9 +69,11 @@ const ContactSection = () => {
         const templateParams = {
             nome: formData.nome,
             email: formData.email,
+            telefone: formData.telefone,
             servico: formData.servico,
             orcamento: formData.orcamento,
             text: formData.text
+
         };
 
         emailjs.send(serviceID, templateID, templateParams, userID)
@@ -86,7 +88,7 @@ const ContactSection = () => {
     return (
         <div>
             <div className="w-full lg:h-[30rem] h-[20rem] relative  ">
-                <div className="lg:w-1/2 w-full  absolute z-20 top-0 bottom-0 lg:right-0 flex justify-end lg:justify-center lg:items-center flex-col lg:space-y-10 px-2 lg:px-0 py-2 lg:py-0">
+                <div className="lg:w-1/2  absolute z-20 lg:top-0 bottom-0 lg:right-0 flex justify-end lg:justify-center lg:items-center flex-col lg:space-y-10 px-2 lg:px-0 py-2 lg:py-0">
                     <div className="flex lg:space-x-10 space-x-5 lg:text-5xl 2xl:text-7xl text-gray-300 font-bold w-full text-left"><h1>V</h1><h1>A</h1><h1>M</h1><h1>O</h1><h1>S</h1></div>
                     <div className="flex lg:space-x-10 space-x-5 lg:text-5xl 2xl:text-7xl text-gray-300 font-bold w-full text-left"><h1>T</h1><h1>R</h1><h1>A</h1><h1>B</h1><h1>A</h1><h1>L</h1><h1 className="lg:text-gray-700">H</h1><h1 className="lg:text-gray-700">A</h1><h1 className="lg:text-gray-700">R</h1></div>
                     <div className="flex lg:space-x-10 space-x-5 lg:text-5xl 2xl:text-7xl text-gray-300 font-bold w-full text-left"><h1>J</h1><h1>U</h1><h1>N</h1><h1>T</h1><h1>O</h1><h1>S</h1></div>
@@ -130,6 +132,7 @@ const ContactSection = () => {
                     <div className="grid grid-cols-2 gap-5">
                         <Input type="email" variant="underlined" label="Seu Email" name="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                         <Input type="text" variant="underlined" label="Seu Nome" name="nome" onChange={(e) => setFormData({ ...formData, nome: e.target.value })} />
+                        <Input type="text" variant="underlined" label="Telefone" name="telefone" onChange={(e) => setFormData({ ...formData, telefone: e.target.value })} />
                         <Select variant="underlined" label="Serviço" name="servico">
                             <SelectSection>
                                 <SelectItem onClick={() => setFormData({ ...formData, servico: 'Precisa de ajuda com um projeto único' })}>Precisa de ajuda com um projeto único</SelectItem>
