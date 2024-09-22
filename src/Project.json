@@ -1,0 +1,104 @@
+{
+    "projetos": [
+      {
+"id": 1,
+  "formato": "Software",
+  "titulo": "GA — Controle de Acesso e Monitoramento de Portas",
+  "minhaFuncao": [
+    "Desenvolvimento de Software",
+    "UX / UI",
+    "Design de Interface",
+    "Integração de Câmeras CFTV"
+  ],
+  "cliente": "Global Advising (GA)",
+  "ano": "2023",
+  "descricao": "O projeto foi desenvolvido para a Global Advising, com foco no controle e monitoramento de portas em ambiente empresarial. O sistema marca o momento em que uma porta é aberta, acionando um alarme no CFTV. O monitoramento é realizado através de sensores de movimento em câmeras ou sensores de proximidade em portas, permitindo o acompanhamento em tempo real.",
+  "meta": "Criar um software eficiente para controle de acessos, com visualização em tempo real das câmeras e histórico detalhado das aberturas de portas, atendendo à demanda por uma interface em modo escuro, adequada ao ambiente de monitoramento.",
+  "processoCriativo": "Utilizei Tailwind CSS para criar o design do sistema, atendendo ao pedido do cliente para o modo escuro, devido ao ambiente de trabalho escuro. A interface foi planejada para garantir uma experiência de usuário fluida, com acesso fácil ao histórico de acessos e acionamento de câmeras em tempo real.",
+  "resultado": "Um sistema robusto de controle de acessos, com visualização de câmeras em tempo real e um histórico detalhado de eventos. A interface em modo escuro otimizou a usabilidade no ambiente de monitoramento da GA, melhorando a segurança e controle.",
+  "agencia": "Global Advising",
+  "depoimentoDoCliente": {
+    "texto": "O sistema de monitoramento desenvolvido superou nossas expectativas. A interface é intuitiva e o acompanhamento em tempo real é crucial para nosso ambiente. Estamos extremamente satisfeitos com o resultado.",
+    "nome": "Lucas Morais",
+    "cargo": "Presidente, Global Advising"
+  },
+        "imagens": [
+          {
+            "url": "",
+            "descricao": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "formato": "Aplicativo Mobile",
+        "titulo": "Snuggle — Aplicativo de Doação de Agasalhos",
+        "minhaFuncao": [
+          "Desenvolvimento de Aplicativo",
+          "UX / UI",
+          "Design de Interface",
+          "Integração com Mapas Interativos",
+          "Desenvolvimento de Back-end",
+          "Integração de Login com Google",
+          "Integração com Firebase",
+          "Integração com Google Maps"
+        ],
+        "cliente": "Equipe Snuggle",
+        "ano": "2024",
+        "descricao": "O Snuggle é um aplicativo desenvolvido em parceria com a equipe Snuggle, com o objetivo de facilitar a doação de agasalhos, especialmente durante o inverno, para moradores de rua e pessoas em situação de vulnerabilidade. O app foi desenvolvido em React Native e inclui integração com Firebase, Google Maps e Google Login. O mapa interativo exibe pontos de coleta de agasalhos, e os usuários podem cadastrar novas roupas para doação, além de visualizar uma lista de locais com maior concentração de doações. A integração com Google Login facilita o acesso dos usuários, enquanto o back-end gerencia as doações e usuários de maneira segura.",
+        "meta": "Criar um aplicativo que simplifique o processo de doação de agasalhos, conectando doadores e pontos de coleta de forma eficiente e acessível, principalmente durante os períodos de inverno, garantindo que moradores de rua tenham acesso a roupas de frio. Além disso, a integração com Google Maps e Firebase visava garantir escalabilidade, enquanto o login com Google proporcionava uma experiência de uso mais ágil e segura.",
+        "processoCriativo": "Utilizei o React Native para garantir a compatibilidade com dispositivos Android e iOS, com integração de Google Maps para o mapa interativo que mostra os pontos de coleta, e Firebase para gerenciar o back-end de maneira escalável e segura. A integração com o Google Login permitiu que os usuários acessassem o aplicativo de forma rápida e segura. A interface foi projetada com foco na facilidade de uso, permitindo que os usuários encontrem pontos de coleta rapidamente e cadastrem suas doações com poucos cliques. O app também ajuda as ONGs a localizarem pontos de coleta de forma estratégica. Além disso, foi realizado um estudo para identificar formas de rentabilidade, como parcerias com ONGs e campanhas patrocinadas.",
+        "resultado": "O Snuggle tornou-se uma ferramenta valiosa para facilitar a doação de agasalhos, conectando doadores a pessoas em situação de vulnerabilidade, especialmente moradores de rua, em períodos de inverno. A interface intuitiva, o mapa interativo via Google Maps e a integração com Firebase e Google Login facilitaram tanto a usabilidade quanto a segurança dos dados. O aplicativo não só simplificou o processo de doação, mas também ajudou a aumentar a conscientização sobre a importância de campanhas de arrecadação de roupas, melhorando a logística de distribuição.",
+        "agencia": "Equipe Snuggle",
+        "depoimentoDoCliente": {
+          "texto": "O Snuggle trouxe uma solução prática para doações de agasalhos, especialmente em períodos de frio. O mapa interativo com Google Maps, o back-end eficiente com Firebase e a integração com o Google Login são grandes diferenciais. O aplicativo ajudou muito nossas equipes a encontrarem rapidamente os pontos de coleta, e o processo de doação ficou muito mais simples e seguro.",
+          "nome": "Ana Paula Silva",
+          "cargo": "Coordenadora de Projetos, Equipe Snuggle"
+        },
+        "imagens": [
+          {
+            "url": "",
+            "descricao": ""
+          }
+        ]
+      }, 
+      {
+        "id" : 3,
+        "titulo": "",
+        "minhaFuncao": [],
+        "cliente": "",
+        "ano": null,
+        "descricao": "",
+        "meta": "",
+        "processoCriativo": "",
+        "resultado": "",
+        "agencia": "",
+        "imagens": [
+          {
+            "url": "",
+            "descricao": ""
+          }
+          
+        ]
+      },
+      {
+        "id" : 4,
+        "titulo": "",
+        "minhaFuncao": [],
+        "cliente": "",
+        "ano": null,
+        "descricao": "",
+        "meta": "",
+        "processoCriativo": "",
+        "resultado": "",
+        "agencia": "",
+        "imagens": [
+          {
+            "url": "",
+            "descricao": ""
+          }
+        ]
+      }
+    ]
+  }
+  

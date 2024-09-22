@@ -1,36 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import projectData from '../Project.json';
 
 const Section2 = () => {
-    const cards = [
-        {
-            id: 1,
-            imageUrl: 'https://picsum.photos/3840/2160?random=1',
-            year: '2024 — 2024',
-            title: 'UX básica — recursos de design para InVision Studio',
-            isNew: true
-        },
-        {
-            id: 2,
-            imageUrl: 'https://picsum.photos/3840/2160?random=2',
-            year: '2018 — 2019',
-            title: 'UX básica — recursos de design para InVision Studio',
-            isNew: false
-        },
-        {
-            id: 3,
-            imageUrl: 'https://picsum.photos/3840/2160?random=3',
-            year: '2016 — 2018',
-            title: 'UX básica — recursos de design para InVision Studio',
-            isNew: false
-        },
-        {
-            id: 4,
-            imageUrl: 'https://picsum.photos/3840/2160?random=4',
-            year: '2020 — 2022',
-            title: 'UX básica — recursos de design para InVision Studio',
-            isNew: false
-        }
-    ];
+    const navigate = useNavigate();
+
+    const cards = projectData.projetos.map(projeto => ({
+        id: projeto.id,
+        imageUrl: projeto.imagens[0]?.url || 'https://picsum.photos/3840/2160?random=1',
+        year: projeto.ano,
+        title: projeto.titulo,
+        isNew: false // Adapte conforme necessário
+    }));
 
     const imageStyle = {
         backgroundRepeat: 'no-repeat',
@@ -48,6 +29,10 @@ const Section2 = () => {
         setHoverStates((prevState) => ({ ...prevState, [id]: false }));
     };
 
+    const handleClick = (id) => {
+        navigate('/project', { state: { id } });
+    };
+
     return (
         <section className="space-y-3 mt-20">
             <div>
@@ -60,6 +45,7 @@ const Section2 = () => {
                         key={card.id}
                         onMouseEnter={() => handleMouseEnter(card.id)}
                         onMouseLeave={() => handleMouseLeave(card.id)}
+                        onClick={() => handleClick(card.id)}
                         className="relative cursor-pointer lg:w-1/3 m-4 h-100 p-6"
                         style={{
                             ...imageStyle,
