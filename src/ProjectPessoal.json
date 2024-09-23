@@ -1,0 +1,72 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "formato": "Aplicativo Mobile",
+      "titulo": "Snuggle — Aplicativo de Doação de Agasalhos",
+      "minhaFuncao": [
+        "Desenvolvimento de Aplicativo",
+        "UX / UI",
+        "Design de Interface",
+        "Integração com Mapas Interativos",
+        "Desenvolvimento de Back-end",
+        "Integração de Login com Google",
+        "Integração com Firebase",
+        "Integração com Google Maps"
+      ],
+      "cliente": "Projeto Pessoal - Equipe Snuggle",
+      "ano": "2024",
+      "descricao": "O Snuggle é um aplicativo pessoal desenvolvido em parceria com a equipe do Snuggle, com o objetivo de facilitar a doação de agasalhos, especialmente durante o inverno, para moradores de rua e pessoas em situação de vulnerabilidade. O app foi desenvolvido em React Native e inclui integração com Firebase, Google Maps e Google Login. O mapa interativo exibe pontos de coleta de agasalhos, e os usuários podem cadastrar novas roupas para doação, além de visualizar uma lista de locais com maior concentração de doações. A integração com Google Login facilita o acesso dos usuários, enquanto o back-end gerencia as doações e usuários de maneira segura.",
+      "meta": "Criar um aplicativo que simplifique o processo de doação de agasalhos, conectando doadores e pontos de coleta de forma eficiente e acessível, principalmente durante os períodos de inverno, garantindo que moradores de rua tenham acesso a roupas de frio. Além disso, a integração com Google Maps e Firebase visava garantir escalabilidade, enquanto o login com Google proporcionava uma experiência de uso mais ágil e segura.",
+      "processoCriativo": "Utilizei o React Native para garantir a compatibilidade com dispositivos Android e iOS, com integração de Google Maps para o mapa interativo que mostra os pontos de coleta, e Firebase para gerenciar o back-end de maneira escalável e segura. A integração com o Google Login permitiu que os usuários acessassem o aplicativo de forma rápida e segura. A interface foi projetada com foco na facilidade de uso, permitindo que os usuários encontrem pontos de coleta rapidamente e cadastrem suas doações com poucos cliques. O app também ajuda as ONGs a localizarem pontos de coleta de forma estratégica. Além disso, foi realizado um estudo para identificar formas de rentabilidade, como parcerias com ONGs e campanhas patrocinadas.",
+      "resultado": "O Snuggle tornou-se uma ferramenta valiosa para facilitar a doação de agasalhos, conectando doadores a pessoas em situação de vulnerabilidade, especialmente moradores de rua, em períodos de inverno. A interface intuitiva, o mapa interativo via Google Maps e a integração com Firebase e Google Login facilitaram tanto a usabilidade quanto a segurança dos dados. O aplicativo não só simplificou o processo de doação, mas também ajudou a aumentar a conscientização sobre a importância de campanhas de arrecadação de roupas, melhorando a logística de distribuição.",
+      "agencia": "Projeto Pessoal - Equipe Snuggle",
+      "depoimentoDoCliente": {
+        "texto": "O desenvolvimento do Snuggle trouxe uma solução prática e eficiente para o problema de doações de agasalhos durante o inverno. A integração com Google Maps e Firebase, aliada à facilidade de uso do aplicativo, tornou o processo de doação mais acessível e organizado. A equipe está extremamente satisfeita com o impacto positivo gerado, tanto para os doadores quanto para as ONGs que utilizam o app.",
+        "nome": "Equipe Snuggle",
+        "cargo": "Desenvolvedores do Projeto"
+      },
+
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "formato": "Aplicativo Mobile",
+      "titulo": "AMAF — Mapeamento de Árvores Frutíferas",
+      "minhaFuncao": [
+        "Desenvolvimento de Aplicativo",
+        "UX / UI",
+        "Design de Interface",
+        "Integração com Mapas Interativos",
+        "Desenvolvimento de Back-end",
+        "Integração de Login com Google",
+        "Integração com Firebase",
+        "Integração com API Fruityvice",
+        "Personalização de Ícones"
+      ],
+      "cliente": "Projeto Pessoal",
+      "ano": "2024",
+      "descricao": "O AMAF é um aplicativo desenvolvido para mapear árvores frutíferas em áreas urbanas, conectando os usuários com locais onde podem encontrar frutas frescas e gratuitas. O app, desenvolvido em React Native, utiliza Firebase para gerenciamento de dados e Google Login para uma experiência de autenticação rápida e segura. O mapa interativo, com ícones personalizados, mostra a localização de árvores frutíferas, enquanto a API Fruityvice fornece informações detalhadas sobre os tipos de frutas. O AMAF facilita a identificação e o compartilhamento de localizações de árvores frutíferas, promovendo sustentabilidade e acesso a alimentos frescos.",
+      "meta": "Criar um aplicativo que conecte pessoas com árvores frutíferas urbanas, promovendo a sustentabilidade e o acesso gratuito a frutas. O objetivo principal era desenvolver um mapa interativo com ícones personalizados para facilitar a localização dessas árvores, com integração de login via Google e back-end escalável via Firebase, além de utilizar a API Fruityvice para fornecer informações sobre as frutas disponíveis.",
+      "processoCriativo": "O AMAF foi desenvolvido com React Native para garantir compatibilidade entre dispositivos Android e iOS. A interface foi desenhada com foco na simplicidade, utilizando ícones personalizados para identificar diferentes tipos de árvores frutíferas no mapa interativo. A integração com Firebase garantiu a escalabilidade do back-end, enquanto a API Fruityvice forneceu informações detalhadas sobre as frutas encontradas. A integração com Google Login simplificou o processo de registro e acesso dos usuários. O design UX/UI focou na usabilidade, permitindo que qualquer pessoa pudesse encontrar árvores frutíferas de maneira fácil e intuitiva.",
+      "resultado": "O AMAF tornou-se uma ferramenta valiosa para aqueles que buscam frutas frescas e gratuitas em áreas urbanas. O mapa interativo com ícones personalizados, a integração com Firebase e Google Login, e os dados fornecidos pela API Fruityvice criaram uma experiência completa e funcional, conectando comunidades e promovendo a sustentabilidade alimentar. O app incentivou a participação dos usuários no compartilhamento de locais de árvores frutíferas, expandindo a rede de recursos naturais disponíveis nas cidades.",
+      "agencia": "Projeto Pessoal",
+      "depoimentoDoCliente": {
+        "texto": "O AMAF é uma iniciativa fantástica para promover o acesso gratuito a frutas em áreas urbanas. A interface é simples e o uso de ícones personalizados no mapa torna a localização das árvores muito intuitiva. A integração com o Google Login e Firebase faz com que a experiência do usuário seja suave e confiável. A sustentabilidade urbana nunca foi tão acessível!",
+        "nome": "João Costa",
+        "cargo": "Usuário Ativo, AMAF"
+      },
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    }
+  ]
+}

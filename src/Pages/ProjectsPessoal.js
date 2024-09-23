@@ -3,10 +3,10 @@ import { useInView } from 'react-intersection-observer';
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Loadding from "../components/Loadding";
-import SectionProject from "../components/SectionProjects";
+import SectionProjectPessoal from "../components/SectionProjectsPessoal";
 import Footer from "../components/Footer";
 
-const Projects = () => {
+const ProjectsPessoal = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isMouseClick, setIsMouseClick] = useState(false);
     const [isLoadding, setIsLoadding] = useState(true);
@@ -46,7 +46,7 @@ const Projects = () => {
             <Header isHovered={isHovered} setIsHovered={setIsHovered} isMouseClick={isMouseClick} setIsMouseClick={setIsMouseClick} isLoadding={isLoadding} isScroll={isScroll} />
             <Menu isHovered={isHovered} setIsHovered={setIsHovered} isMouseClick={isMouseClick} setIsMouseClick={setIsMouseClick} />
             <div className={`${isMouseClick || isLoadding || !showContent ? 'hidden' : 'transition-opacity duration-500 opacity-100'}`}>
-                <SectionProject />
+                <SectionProjectPessoal />
             </div>
 
             <div className={`${isMouseClick ? 'hidden' : ''} ${isLoadding ? 'hidden' : ''}`}>
@@ -56,4 +56,4 @@ const Projects = () => {
     );
 }
 
-export default Projects;
+export default ProjectsPessoal;

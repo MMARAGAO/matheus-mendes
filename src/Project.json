@@ -1,104 +1,112 @@
 {
-    "projetos": [
-      {
-"id": 1,
-  "formato": "Software",
-  "titulo": "GA — Controle de Acesso e Monitoramento de Portas",
-  "minhaFuncao": [
-    "Desenvolvimento de Software",
-    "UX / UI",
-    "Design de Interface",
-    "Integração de Câmeras CFTV"
-  ],
-  "cliente": "Global Advising (GA)",
-  "ano": "2023",
-  "descricao": "O projeto foi desenvolvido para a Global Advising, com foco no controle e monitoramento de portas em ambiente empresarial. O sistema marca o momento em que uma porta é aberta, acionando um alarme no CFTV. O monitoramento é realizado através de sensores de movimento em câmeras ou sensores de proximidade em portas, permitindo o acompanhamento em tempo real.",
-  "meta": "Criar um software eficiente para controle de acessos, com visualização em tempo real das câmeras e histórico detalhado das aberturas de portas, atendendo à demanda por uma interface em modo escuro, adequada ao ambiente de monitoramento.",
-  "processoCriativo": "Utilizei Tailwind CSS para criar o design do sistema, atendendo ao pedido do cliente para o modo escuro, devido ao ambiente de trabalho escuro. A interface foi planejada para garantir uma experiência de usuário fluida, com acesso fácil ao histórico de acessos e acionamento de câmeras em tempo real.",
-  "resultado": "Um sistema robusto de controle de acessos, com visualização de câmeras em tempo real e um histórico detalhado de eventos. A interface em modo escuro otimizou a usabilidade no ambiente de monitoramento da GA, melhorando a segurança e controle.",
-  "agencia": "Global Advising",
-  "depoimentoDoCliente": {
-    "texto": "O sistema de monitoramento desenvolvido superou nossas expectativas. A interface é intuitiva e o acompanhamento em tempo real é crucial para nosso ambiente. Estamos extremamente satisfeitos com o resultado.",
-    "nome": "Lucas Morais",
-    "cargo": "Presidente, Global Advising"
-  },
-        "imagens": [
-          {
-            "url": "",
-            "descricao": ""
-          }
-        ]
+  "projetos": [
+    {
+      "id": 1,
+      "formato": "Software",
+      "titulo": "GA — Controle de Acesso e Monitoramento de Portas",
+      "minhaFuncao": [
+        "Desenvolvimento de Software",
+        "UX / UI",
+        "Design de Interface",
+        "Integração de Câmeras CFTV"
+      ],
+      "cliente": "Global Advising (GA)",
+      "ano": "2023",
+      "descricao": "O projeto foi desenvolvido para a Global Advising, com foco no controle e monitoramento de portas em ambiente empresarial. O sistema marca o momento em que uma porta é aberta, acionando um alarme no CFTV. O monitoramento é realizado através de sensores de movimento em câmeras ou sensores de proximidade em portas, permitindo o acompanhamento em tempo real.",
+      "meta": "Criar um software eficiente para controle de acessos, com visualização em tempo real das câmeras e histórico detalhado das aberturas de portas, atendendo à demanda por uma interface em modo escuro, adequada ao ambiente de monitoramento.",
+      "processoCriativo": "Utilizei Tailwind CSS para criar o design do sistema, atendendo ao pedido do cliente para o modo escuro, devido ao ambiente de trabalho escuro. A interface foi planejada para garantir uma experiência de usuário fluida, com acesso fácil ao histórico de acessos e acionamento de câmeras em tempo real.",
+      "resultado": "Um sistema robusto de controle de acessos, com visualização de câmeras em tempo real e um histórico detalhado de eventos. A interface em modo escuro otimizou a usabilidade no ambiente de monitoramento da GA, melhorando a segurança e controle.",
+      "agencia": "Global Advising",
+      "depoimentoDoCliente": {
+        "texto": "O sistema de monitoramento desenvolvido superou nossas expectativas. A interface é intuitiva e o acompanhamento em tempo real é crucial para nosso ambiente. Estamos extremamente satisfeitos com o resultado.",
+        "nome": "Lucas Morais",
+        "cargo": "Presidente, Global Advising"
       },
-      {
-        "id": 2,
-        "formato": "Aplicativo Mobile",
-        "titulo": "Snuggle — Aplicativo de Doação de Agasalhos",
-        "minhaFuncao": [
-          "Desenvolvimento de Aplicativo",
-          "UX / UI",
-          "Design de Interface",
-          "Integração com Mapas Interativos",
-          "Desenvolvimento de Back-end",
-          "Integração de Login com Google",
-          "Integração com Firebase",
-          "Integração com Google Maps"
-        ],
-        "cliente": "Equipe Snuggle",
-        "ano": "2024",
-        "descricao": "O Snuggle é um aplicativo desenvolvido em parceria com a equipe Snuggle, com o objetivo de facilitar a doação de agasalhos, especialmente durante o inverno, para moradores de rua e pessoas em situação de vulnerabilidade. O app foi desenvolvido em React Native e inclui integração com Firebase, Google Maps e Google Login. O mapa interativo exibe pontos de coleta de agasalhos, e os usuários podem cadastrar novas roupas para doação, além de visualizar uma lista de locais com maior concentração de doações. A integração com Google Login facilita o acesso dos usuários, enquanto o back-end gerencia as doações e usuários de maneira segura.",
-        "meta": "Criar um aplicativo que simplifique o processo de doação de agasalhos, conectando doadores e pontos de coleta de forma eficiente e acessível, principalmente durante os períodos de inverno, garantindo que moradores de rua tenham acesso a roupas de frio. Além disso, a integração com Google Maps e Firebase visava garantir escalabilidade, enquanto o login com Google proporcionava uma experiência de uso mais ágil e segura.",
-        "processoCriativo": "Utilizei o React Native para garantir a compatibilidade com dispositivos Android e iOS, com integração de Google Maps para o mapa interativo que mostra os pontos de coleta, e Firebase para gerenciar o back-end de maneira escalável e segura. A integração com o Google Login permitiu que os usuários acessassem o aplicativo de forma rápida e segura. A interface foi projetada com foco na facilidade de uso, permitindo que os usuários encontrem pontos de coleta rapidamente e cadastrem suas doações com poucos cliques. O app também ajuda as ONGs a localizarem pontos de coleta de forma estratégica. Além disso, foi realizado um estudo para identificar formas de rentabilidade, como parcerias com ONGs e campanhas patrocinadas.",
-        "resultado": "O Snuggle tornou-se uma ferramenta valiosa para facilitar a doação de agasalhos, conectando doadores a pessoas em situação de vulnerabilidade, especialmente moradores de rua, em períodos de inverno. A interface intuitiva, o mapa interativo via Google Maps e a integração com Firebase e Google Login facilitaram tanto a usabilidade quanto a segurança dos dados. O aplicativo não só simplificou o processo de doação, mas também ajudou a aumentar a conscientização sobre a importância de campanhas de arrecadação de roupas, melhorando a logística de distribuição.",
-        "agencia": "Equipe Snuggle",
-        "depoimentoDoCliente": {
-          "texto": "O Snuggle trouxe uma solução prática para doações de agasalhos, especialmente em períodos de frio. O mapa interativo com Google Maps, o back-end eficiente com Firebase e a integração com o Google Login são grandes diferenciais. O aplicativo ajudou muito nossas equipes a encontrarem rapidamente os pontos de coleta, e o processo de doação ficou muito mais simples e seguro.",
-          "nome": "Ana Paula Silva",
-          "cargo": "Coordenadora de Projetos, Equipe Snuggle"
-        },
-        "imagens": [
-          {
-            "url": "",
-            "descricao": ""
-          }
-        ]
-      }, 
-      {
-        "id" : 3,
-        "titulo": "",
-        "minhaFuncao": [],
-        "cliente": "",
-        "ano": null,
-        "descricao": "",
-        "meta": "",
-        "processoCriativo": "",
-        "resultado": "",
-        "agencia": "",
-        "imagens": [
-          {
-            "url": "",
-            "descricao": ""
-          }
-          
-        ]
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "formato": "Software Web",
+      "titulo": "Análise de Riscos — Segurança Empresarial",
+      "minhaFuncao": [
+        "Desenvolvimento de Software",
+        "UX / UI",
+        "Design de Interface",
+        "Integração de Chat",
+        "Desenvolvimento de Back-end"
+      ],
+      "cliente": "Empresa de Segurança Empresarial",
+      "ano": "2024",
+      "descricao": "O software foi desenvolvido para realizar uma análise detalhada dos riscos de segurança em ambientes empresariais. Ele inclui um chat interativo para facilitar a coleta de dados, onde perguntas minuciosas são feitas com o objetivo de garantir 100% de aproveitamento na análise de segurança. A solução foi desenvolvida usando Django e Python no back-end e Tailwind CSS para o design responsivo da interface, proporcionando uma experiência de usuário eficiente e fluida. O chat coleta respostas em tempo real, permitindo uma análise rápida e eficaz dos riscos.",
+      "meta": "Criar uma ferramenta que facilite a análise de riscos em ambientes empresariais, coletando informações diretamente por meio de um chat interativo e garantindo que todas as perguntas fossem respondidas de maneira precisa e completa. O objetivo era alcançar 100% de aproveitamento nas análises, utilizando uma interface simples e intuitiva para os usuários.",
+      "processoCriativo": "O desenvolvimento envolveu a criação de um chat interativo com perguntas cuidadosamente elaboradas, garantindo que cada aspecto da segurança fosse abordado de maneira eficaz. Utilizamos Django e Python no back-end para criar uma solução robusta e escalável, enquanto Tailwind CSS foi usado no design, garantindo uma interface moderna e responsiva. A implementação do chat permitiu uma coleta de dados eficiente, com foco na precisão e na usabilidade. A interface foi projetada para ser intuitiva, garantindo que os usuários pudessem navegar facilmente pelas perguntas e respostas sem dificuldades.",
+      "resultado": "O software proporcionou uma maneira eficiente de realizar análises de risco em segurança empresarial, com uma interface intuitiva e um sistema de coleta de dados altamente preciso. As perguntas minuciosamente elaboradas garantiram que as empresas pudessem realizar uma análise de 100% de aproveitamento, identificando pontos críticos de segurança com mais eficiência. O uso de Django e Tailwind CSS garantiu uma solução estável e visualmente atraente, enquanto o chat facilitou a interação dos usuários.",
+      "agencia": "Empresa de Segurança Empresarial",
+      "depoimentoDoCliente": {
+        "texto": "O sistema de análise de riscos superou nossas expectativas. O chat interativo facilitou a coleta de dados e garantiu uma análise completa e eficiente. A interface é muito intuitiva e o processo foi rápido e sem complicações. Estamos extremamente satisfeitos com o resultado.",
+        "nome": "Ronen Ben Enfraim",
+        "cargo": "Presidente, Global Advising"
       },
-      {
-        "id" : 4,
-        "titulo": "",
-        "minhaFuncao": [],
-        "cliente": "",
-        "ano": null,
-        "descricao": "",
-        "meta": "",
-        "processoCriativo": "",
-        "resultado": "",
-        "agencia": "",
-        "imagens": [
-          {
-            "url": "",
-            "descricao": ""
-          }
-        ]
-      }
-    ]
-  }
-  
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "formato": "Aplicativo Mobile",
+      "titulo": "Controle de Veículos — Rastreamento e Gestão de Frotas",
+      "minhaFuncao": [
+        "Desenvolvimento de Aplicativo",
+        "UX / UI",
+        "Design de Interface",
+        "Integração com Controladora Veicular",
+        "Desenvolvimento de Back-end",
+        "Gestão de Frotas"
+      ],
+      "cliente": "Empresa de Gestão de Frotas",
+      "ano": "2024",
+      "descricao": "Este aplicativo foi desenvolvido para empresas e indivíduos que necessitam monitorar e controlar seus veículos remotamente. Integrado com uma controladora instalada no carro, o aplicativo permite o rastreamento em tempo real, desligamento remoto do motor, monitoramento do nível de gasolina, velocidade do veículo e gestão de frotas. O design da interface foi pensado para proporcionar uma experiência simples e direta, facilitando a interação com o aplicativo, enquanto a personalização permite ajustes de acordo com as preferências do usuário. Toda a instalação da controladora no veículo foi parte integral do projeto.",
+      "meta": "Desenvolver um aplicativo robusto e eficiente que permitisse o controle total de veículos remotamente, incluindo o desligamento do motor e a gestão de frotas. Além disso, o foco era criar uma interface personalizada e intuitiva, com a capacidade de monitorar informações importantes como nível de combustível e velocidade, enquanto mantinha a instalação da controladora simples e eficaz.",
+      "processoCriativo": "O aplicativo foi desenvolvido com foco em oferecer uma interface fácil de usar e personalizável, permitindo que os usuários visualizem e controlem o status do veículo em tempo real. Utilizamos a integração com controladoras instaladas nos veículos para monitorar dados essenciais, como nível de gasolina e velocidade, além de permitir o desligamento remoto. A gestão de frotas foi projetada para atender empresas que precisam acompanhar múltiplos veículos ao mesmo tempo. O design foi pensado para simplificar a experiência de uso, mesmo para aqueles com pouco conhecimento técnico, proporcionando uma interação fluida com o sistema.",
+      "resultado": "O aplicativo trouxe uma solução eficiente e segura para o controle remoto de veículos, com funcionalidades como rastreamento em tempo real, desligamento remoto e gestão de frotas. A interface personalizável e a facilidade de uso garantiram que os usuários pudessem acessar as informações do veículo e realizar ações críticas rapidamente. A instalação da controladora veicular foi simples e integrada perfeitamente com o sistema do aplicativo.",
+      "agencia": "Empresa de Gestão de Frotas",
+      "depoimentoDoCliente": {
+        "texto": "O aplicativo desenvolvido superou nossas expectativas em termos de funcionalidade e usabilidade. O controle remoto do veículo, aliado à gestão de frotas, trouxe muito mais eficiência para nossa operação. A interface personalizada foi um diferencial e a instalação da controladora no veículo foi rápida e eficaz.",
+        "nome": "Roberto Santos",
+        "cargo": "Gerente de Operações, Empresa de Gestão de Frotas"
+      },
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "",
+      "minhaFuncao": [],
+      "cliente": "",
+      "ano": null,
+      "descricao": "",
+      "meta": "",
+      "processoCriativo": "",
+      "resultado": "",
+      "agencia": "",
+      "imagens": [
+        {
+          "url": "",
+          "descricao": ""
+        }
+      ]
+    }
+  ]
+}
