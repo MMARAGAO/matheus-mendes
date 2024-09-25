@@ -60,7 +60,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "formato": "Aplicativo Mobile",
       "titulo": "Controle de Veículos — Rastreamento e Gestão de Frotas",
       "minhaFuncao": [
@@ -83,24 +83,6 @@
         "nome": "Roberto Santos",
         "cargo": "Gerente de Operações, Empresa de Gestão de Frotas"
       },
-      "imagens": [
-        {
-          "url": "",
-          "descricao": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "titulo": "",
-      "minhaFuncao": [],
-      "cliente": "",
-      "ano": null,
-      "descricao": "",
-      "meta": "",
-      "processoCriativo": "",
-      "resultado": "",
-      "agencia": "",
       "imagens": [
         {
           "url": "",
