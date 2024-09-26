@@ -10,7 +10,7 @@ const Header = ({ isHovered, setIsHovered, isMouseClick, setIsMouseClick, isLoad
                 to="/"
                 className={`z-20 relative cursor-pointer font-bold transition-colors duration-500 hover:text-gray-400 ${isLoadding ? 'text-white' : isMouseClick ? 'text-white' : 'text-gray-900'}`}
             >
-                <img src={isLoadding ? logo2 : isMouseClick ? logo2 : logo} alt="logo" className="w-52" />
+                <img src={isLoadding ? logo2 : isMouseClick ? logo2 : logo} alt="logo" className="lg:w-44 w-32" />
             </Link>
             <div className="z-10 cursor-pointer flex justify-center items-center space-x-2" onClick={() => setIsMouseClick(!isMouseClick)}
                 onMouseOver={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
