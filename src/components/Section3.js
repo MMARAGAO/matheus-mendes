@@ -39,14 +39,14 @@ const Section3 = () => {
                 <h1 className=" text-gray-500">Ciência da Computação</h1>
                 <h1 className="font-bold text-4xl">Projetos Pessoais</h1>
             </div>
-            <div className="flex flex-wrap w-full justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-8 ">
                 {cards.map((card) => (
                     <div
                         key={card.id}
                         onMouseEnter={() => handleMouseEnter(card.id)}
                         onMouseLeave={() => handleMouseLeave(card.id)}
                         onClick={() => handleClick(card.id)}
-                        className="relative cursor-pointer lg:w-1/3 m-4 h-100 p-6"
+                        className="relative cursor-pointer h-100 p-6"
                         style={{
                             ...imageStyle,
                             backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${card.imageUrl})`

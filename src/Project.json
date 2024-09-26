@@ -58,37 +58,6 @@
           "descricao": ""
         }
       ]
-    },
-    {
-      "id": 3,
-      "formato": "Aplicativo Mobile",
-      "titulo": "Controle de Veículos — Rastreamento e Gestão de Frotas",
-      "minhaFuncao": [
-        "Desenvolvimento de Aplicativo",
-        "UX / UI",
-        "Design de Interface",
-        "Integração com Controladora Veicular",
-        "Desenvolvimento de Back-end",
-        "Gestão de Frotas"
-      ],
-      "cliente": "Empresa de Gestão de Frotas",
-      "ano": "2024",
-      "descricao": "Este aplicativo foi desenvolvido para empresas e indivíduos que necessitam monitorar e controlar seus veículos remotamente. Integrado com uma controladora instalada no carro, o aplicativo permite o rastreamento em tempo real, desligamento remoto do motor, monitoramento do nível de gasolina, velocidade do veículo e gestão de frotas. O design da interface foi pensado para proporcionar uma experiência simples e direta, facilitando a interação com o aplicativo, enquanto a personalização permite ajustes de acordo com as preferências do usuário. Toda a instalação da controladora no veículo foi parte integral do projeto.",
-      "meta": "Desenvolver um aplicativo robusto e eficiente que permitisse o controle total de veículos remotamente, incluindo o desligamento do motor e a gestão de frotas. Além disso, o foco era criar uma interface personalizada e intuitiva, com a capacidade de monitorar informações importantes como nível de combustível e velocidade, enquanto mantinha a instalação da controladora simples e eficaz.",
-      "processoCriativo": "O aplicativo foi desenvolvido com foco em oferecer uma interface fácil de usar e personalizável, permitindo que os usuários visualizem e controlem o status do veículo em tempo real. Utilizamos a integração com controladoras instaladas nos veículos para monitorar dados essenciais, como nível de gasolina e velocidade, além de permitir o desligamento remoto. A gestão de frotas foi projetada para atender empresas que precisam acompanhar múltiplos veículos ao mesmo tempo. O design foi pensado para simplificar a experiência de uso, mesmo para aqueles com pouco conhecimento técnico, proporcionando uma interação fluida com o sistema.",
-      "resultado": "O aplicativo trouxe uma solução eficiente e segura para o controle remoto de veículos, com funcionalidades como rastreamento em tempo real, desligamento remoto e gestão de frotas. A interface personalizável e a facilidade de uso garantiram que os usuários pudessem acessar as informações do veículo e realizar ações críticas rapidamente. A instalação da controladora veicular foi simples e integrada perfeitamente com o sistema do aplicativo.",
-      "agencia": "Empresa de Gestão de Frotas",
-      "depoimentoDoCliente": {
-        "texto": "O aplicativo desenvolvido superou nossas expectativas em termos de funcionalidade e usabilidade. O controle remoto do veículo, aliado à gestão de frotas, trouxe muito mais eficiência para nossa operação. A interface personalizada foi um diferencial e a instalação da controladora no veículo foi rápida e eficaz.",
-        "nome": "Roberto Santos",
-        "cargo": "Gerente de Operações, Empresa de Gestão de Frotas"
-      },
-      "imagens": [
-        {
-          "url": "",
-          "descricao": ""
-        }
-      ]
     }
   ]
 }

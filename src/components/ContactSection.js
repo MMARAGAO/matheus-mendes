@@ -67,7 +67,7 @@ const ContactSection = () => {
 
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Previne o comportamento padrão de recarregar a página
+        e.preventDefault();
 
         setIsLoading(true);
 
@@ -120,7 +120,7 @@ const ContactSection = () => {
                                 fullscreenControl: false,
                                 mapTypeControl: false,
                                 streetViewControl: false,
-                                minZoom: 14,
+                                minZoom: 4,
                                 maxZoom: 100
                             }}
                         >

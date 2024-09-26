@@ -52,7 +52,7 @@ const Section4 = () => {
                 <h1 className=" text-gray-500">O que há de novo?</h1>
                 <h1 className="font-bold text-4xl">Redes Sociais </h1>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-3 gap-8 px-8">
                 {cards.map((card) => (
                     <button
                         onClick={() => window.open(card.link, '_blank')}
