@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import NET from 'vanta/dist/vanta.net.min'
+import GLOBE from 'vanta/dist/vanta.globe.min'
 import * as THREE from 'three'
 
 const Loadding = ({ isLoadding }) => {
@@ -7,7 +7,7 @@ const Loadding = ({ isLoadding }) => {
     const myRef = useRef(null)
     useEffect(() => {
         if (!vantaEffect) {
-            setVantaEffect(NET({
+            setVantaEffect(GLOBE({
                 el: myRef.current,
                 THREE: THREE,
                 mouseControls: true,
