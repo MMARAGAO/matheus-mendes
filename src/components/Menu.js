@@ -9,8 +9,6 @@ const Menu = ({ isMouseClick, setIsMouseClick }) => {
     const [vantaEffect, setVantaEffect] = useState(null);
     const vantaRef = useRef(null);
 
-
-
     const vantaConfig = {
         el: vantaRef.current,
         p5: p5,
